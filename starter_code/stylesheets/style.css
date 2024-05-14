@@ -8,3 +8,120 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    background-color: #540b51;
+    padding: 0 1rem;
+
+    div {
+        display: flex;
+        width: 50%;
+        align-items: center;
+
+        ul {
+            display: none;
+        }
+        img {
+            height: 20%;
+        }
+        button {
+            background-color: #540b51;
+            border: none;
+            height: 100%;
+        }
+    }
+    div:nth-child(2) {
+        display: flex;
+        justify-content: end;
+        gap: 1rem;
+    }
+}
+
+header {
+    background-color: #540b51;
+    color: white;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 0.5rem;
+        width: 100%;
+
+        button {
+            display: flex;
+            height: 50px;
+            text-transform: uppercase;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+        button:nth-child(2) {
+            display: flex;
+            background-color: #4285f4;
+            justify-content: center;
+            position: relative;
+            height: 50px;
+            width: 100%;
+            color: #f3eae2;
+            img {
+                background-color: #f3eae2;
+                object-fit: contain;
+                height: 80%;
+                position: absolute;
+                left: 0.5rem;
+                padding: 5px;
+                border-radius: 2px;
+            }
+        }
+    }
+
+    div:nth-child(2) {
+        margin-top: 10%;
+        overflow: hidden;
+        img {
+            object-fit: contain;
+            object-position: 100px;
+            width: 200%;
+        }
+    }
+}
+
+main {
+    section:nth-child(1) {
+        background-color: #f3eae2;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        padding: 1rem;
+        p {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            row-gap: 2rem;
+        }
+        img {
+            height: 30px;
+            object-fit: cover;
+        }
+    }
+}
