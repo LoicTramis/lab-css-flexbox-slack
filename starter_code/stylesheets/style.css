@@ -124,4 +124,35 @@ main {
             object-fit: cover;
         }
     }
+    section:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.5rem;
+        text-align: center;
+        h3 {
+            font-size: 1.5rem;
+            padding: 1rem;
+            color: #540b51;
+        }
+
+        ul {
+            margin: 2rem;
+            list-style-type: none;
+            li {
+                padding: 1rem;
+                font-weight: bold;
+                span {
+                    font-size: 2.5rem;
+                    color: #540b51;
+                }
+            }
+
+        }
+    }
+    section:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
