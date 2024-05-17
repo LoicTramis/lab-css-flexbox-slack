@@ -147,12 +147,111 @@ main {
                     color: #540b51;
                 }
             }
-
         }
     }
     section:nth-child(3) {
         display: flex;
         flex-direction: column;
         text-align: center;
+        background-color: #540b51;
+        height: fit-content;
+        color: white;
+        font-size: 1.75rem;
+        padding: 1.5rem 0.75rem;
+        h3 {
+            padding: 1.5rem;
+        }
+        button {
+            margin: 0.5rem 0;
+            padding: 1rem 0.5rem;
+            text-transform: uppercase;
+            border: 1px #f3eae2 solid;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        button:first-child {
+            background-color: #f3eae2;
+            color: #540b51;
+        }
+        button:last-child {
+            background-color: inherit;
+            color: #f3eae2;
+        }
+    }
+}
+
+footer {
+    ul:first-child {
+        font-weight: bold;
+        font-size: 1.15rem;
+        padding: 1rem;
+        list-style-type: none;
+        li {
+            margin-top: 1rem;
+        }
+        li:nth-child(6) {
+            list-style-image: url("../images/icon-region.png");
+            margin-left: 1.5rem;
+        }
+        li:last-child {
+            color: #4285f4;
+            list-style-image: url("../images/icon-download.png");
+            margin-left: 1.5rem;
+        }
+    }
+    ul:nth-child(3) {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        font-size: 1.2rem;
+        margin: 1.5rem 0;
+    }
+    div {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #454245;
+    }
+}
+
+@media (768px < width < 1024px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        height: 100vh;
+        div:first-child {
+            align-items: start;
+            font-size: 1.5rem;
+            text-align: left;
+            margin-left: 2rem;
+            h1 {
+                font-size: 5rem;
+                text-align: left;
+            }
+            div {
+                gap: 1rem;
+            }
+        }
+        div:nth-child(2) {
+            img {
+                object-position: 275px;
+                width: 150%;
+            }
+        }
+    }
+    main {
+        section:nth-child(2) {
+            ul {
+                display: flex;
+                text-align: left;
+            }
+        }
+    }
+    footer {
+        ul:first-child {
+            display: flex;
+            justify-content: space-around;
+            font-size: 0.75rem;
+        }
     }
 }
